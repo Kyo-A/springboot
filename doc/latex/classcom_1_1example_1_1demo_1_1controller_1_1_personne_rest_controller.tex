@@ -1,0 +1,121 @@
+\doxysection{com.\+example.\+demo.\+controller.\+Personne\+Rest\+Controller Class Reference}
+\label{classcom_1_1example_1_1demo_1_1controller_1_1_personne_rest_controller}\index{com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Collection$<$ \textbf{ Personne} $>$ \textbf{ get\+Personnes} ()
+\item 
+Response\+Entity$<$ \textbf{ Personne} $>$ \textbf{ get\+Personne\+By\+Id} (@Path\+Variable Long id)
+\item 
+\textbf{ Personne} \textbf{ save} (@Valid @Request\+Body \textbf{ Personne} personne)
+\item 
+Response\+Entity$<$ \textbf{ Personne} $>$ \textbf{ update\+Personne} (@Path\+Variable(value=\char`\"{}id\char`\"{}) Long id, @Request\+Body \textbf{ Personne} personne)
+\item 
+void \textbf{ delete\+Personne} (@Path\+Variable(value=\char`\"{}id\char`\"{}) Long id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Damien Monchaty 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1example_1_1demo_1_1controller_1_1_personne_rest_controller_a2ecdd72276ae6f4d32a805b4a5e1945d}} 
+\index{com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}!deletePersonne@{deletePersonne}}
+\index{deletePersonne@{deletePersonne}!com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}}
+\doxysubsubsection{deletePersonne()}
+{\footnotesize\ttfamily void com.\+example.\+demo.\+controller.\+Personne\+Rest\+Controller.\+delete\+Personne (\begin{DoxyParamCaption}\item[{@Path\+Variable(value=\char`\"{}id\char`\"{}) Long}]{id }\end{DoxyParamCaption})}
+
+Retourne une personne supprimée selon son id dans la bdd.
+
+\begin{DoxyReturn}{Returns}
+Retourne le corps d\textquotesingle{}une personne supprimée selon son id.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Resource\+Not\+Found\+Exception} & Si jamais la personne à modifier n\textquotesingle{}est pas trouvée \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classcom_1_1example_1_1demo_1_1controller_1_1_personne_rest_controller_a0e4468d0b9c0c8b270dc40e44d62f051}} 
+\index{com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}!getPersonneById@{getPersonneById}}
+\index{getPersonneById@{getPersonneById}!com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}}
+\doxysubsubsection{getPersonneById()}
+{\footnotesize\ttfamily Response\+Entity$<$\textbf{ Personne}$>$ com.\+example.\+demo.\+controller.\+Personne\+Rest\+Controller.\+get\+Personne\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id }\end{DoxyParamCaption})}
+
+Retourne une personne selon son id de la bdd.
+
+\begin{DoxyReturn}{Returns}
+Retourne le corps d\textquotesingle{}une personne selon son id.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Resource\+Not\+Found\+Exception} & Si jamais la personne n\textquotesingle{}est pas trouvée\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classcom_1_1example_1_1demo_1_1controller_1_1_personne_rest_controller_a845f22e53567b8e2c75b78d795521b5e}} 
+\index{com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}!getPersonnes@{getPersonnes}}
+\index{getPersonnes@{getPersonnes}!com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}}
+\doxysubsubsection{getPersonnes()}
+{\footnotesize\ttfamily Collection$<$\textbf{ Personne}$>$ com.\+example.\+demo.\+controller.\+Personne\+Rest\+Controller.\+get\+Personnes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retourne la liste de personnes de l\textquotesingle{}entité mappé dans la bdd My\+Sql.
+
+\begin{DoxyReturn}{Returns}
+Retourne la liste de personnes. 
+\end{DoxyReturn}
+\mbox{\label{classcom_1_1example_1_1demo_1_1controller_1_1_personne_rest_controller_aa526e428f2588fbecdf4adb6446bc6f2}} 
+\index{com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}!save@{save}}
+\index{save@{save}!com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}}
+\doxysubsubsection{save()}
+{\footnotesize\ttfamily \textbf{ Personne} com.\+example.\+demo.\+controller.\+Personne\+Rest\+Controller.\+save (\begin{DoxyParamCaption}\item[{@Valid @Request\+Body \textbf{ Personne}}]{personne }\end{DoxyParamCaption})}
+
+Enregistre une personne dans la bdd.
+
+\begin{DoxyReturn}{Returns}
+Retourne l\textquotesingle{}instance de l\textquotesingle{}objet Personne créé.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Personne} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classcom_1_1example_1_1demo_1_1controller_1_1_personne_rest_controller_a5a11a4052ae674c8d5dbed3d20ca173c}} 
+\index{com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}!updatePersonne@{updatePersonne}}
+\index{updatePersonne@{updatePersonne}!com.example.demo.controller.PersonneRestController@{com.example.demo.controller.PersonneRestController}}
+\doxysubsubsection{updatePersonne()}
+{\footnotesize\ttfamily Response\+Entity$<$\textbf{ Personne}$>$ com.\+example.\+demo.\+controller.\+Personne\+Rest\+Controller.\+update\+Personne (\begin{DoxyParamCaption}\item[{@Path\+Variable(value=\char`\"{}id\char`\"{}) Long}]{id,  }\item[{@Request\+Body \textbf{ Personne}}]{personne }\end{DoxyParamCaption})}
+
+Retourne une personne modifiée selon son id de la bdd.
+
+\begin{DoxyReturn}{Returns}
+Retourne le corps et le http\+Status d\textquotesingle{}une personne modifiée selon son id.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Resource\+Not\+Found\+Exception} & Si jamais la personne à modifier n\textquotesingle{}est pas trouvée\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & \\
+\hline
+{\em Personne} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/demo/controller/\textbf{ Personne\+Rest\+Controller.\+java}\end{DoxyCompactItemize}
